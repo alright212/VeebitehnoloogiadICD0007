@@ -1,0 +1,130 @@
+.header-a {
+    border-bottom: 3px solid black;
+    font-family: "Marker Felt", fantasy;
+    color: goldenrod;
+    width: 40%;
+}
+/**/
+.header-b {
+    border-bottom: 3px solid black;
+    font-family: "Marker Felt", fantasy;
+    color: goldenrod;
+    width: 50%;
+}
+
+.header-hinne {
+    border-bottom: 3px solid black;
+    font-family: "Marker Felt", fantasy;
+    color: goldenrod;
+    width: 10%;
+}
+
+.first {
+    width: 40%;
+}
+
+.second {
+    width: 40%;
+}
+
+.filledStar {
+    color: gold;
+    font-size: large;
+}
+
+.emptyStar {
+    color: dimgray;
+    font-size: large;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.button {
+    width: 16rem;
+    color: gold;
+    background: black;
+    font-size: large;
+    border: none;
+}
+
+main {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+}
+
+nav span {
+    padding: 0 0.5rem;
+}
+
+nav, footer {
+    background-color: wheat;
+    border-radius: .25rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gold;
+    font-family: "Marker Felt", fantasy;
+    text-decoration: none;
+}
+
+input[type='text'], select {
+    font-size: 0.8rem;
+    width: 15rem;
+    padding: 0.3rem;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: .25rem;
+}
+
+#root {
+    padding: 1rem;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 2.2rem auto 2.2rem;
+}
+
+#input-form {
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    max-width: 28rem;
+    flex-wrap: wrap;
+}
+
+#input-form .label-cell {
+    width: 8rem;
+    line-height: 1.9rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+#input-form .input-cell {
+    line-height: 1.9rem;
+}
+
+#author-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    line-height: 2rem;
+}
+
+#author-list div.header-divider {
+    background-color: wheat;
+    padding-top: 0.2rem;
+    margin-bottom: 0.4rem;
+}
