@@ -1,0 +1,45 @@
+Kui brauser näitab soovitud tulemust ka standardile mittevastava Html koodi korral, siis miks peaks standardit jälgima?
+
+HTML-i standardit tuleks järgida, sest see on standard, mida brauserid on loodud tõlgendama. Kuigi enamik brausereid üritab veebilehte kuvada isegi siis, kui HTML ei ole kehtiv, ei pruugi nad seda õigesti kuvada. Lisaks muudab standardi järgimine teistele teie koodi lugemise ja mõistmise lihtsamaks.
+
+2. Css failis määratakse tihti konkreetse fondi asemel "font-family". Miks?
+
+Kui konkreetset fonti pole määratud, kasutab brauser selle vaikefonti. Atribuut fondiperekond võimaldab brauseril valida fontide loendist, kui esimene font pole saadaval.
+
+
+3. Relatsioonilises andmebaasis peaks üks mitmele seose puhul (nt. isik ja tema telefonid), hoidma seotud andmeid eraldi tabelis. Miks?
+
+Seotud andmed tuleks salvestada eraldi tabelisse, kuna andmeid on efektiivsem salvestada eraldi tabelitesse. Kui andmed on salvestatud eraldi tabelitesse, on andmete päringuid ja värskendamist lihtsam teha.
+
+4. Veebirakenduse koodi silumine (debugging) on käsurea rakenduse silumisega võrreldes keerulisem. Miks? 
+
+Veebirakenduses on palju rohkem potentsiaalseid tõrkeallikaid kui käsurearakendustes. Näiteks peab veebirakendus tegelema kasutaja sisendi, võrgusuhtluse ja andmebaasiga suhtlemisega. Kõik need valdkonnad võivad põhjustada vigu, mida on raske tuvastada. Lisaks koosneb veebirakendus tavaliselt paljudest erinevatest komponentidest, mistõttu on rakenduse üldisest voost raske aru saada.
+
+Alloleva css klassi nimi (blue-border) ei ole hea. Miks?
+
+    .blue-border { border: 3px solid blue; }
+
+Allpool olev css-klassi nimi pole hea, sest see pole piisavalt konkreetne.
+
+
+ 3. Kuidas on seotud küpsised (cookie) ja Cross-Site Request Forgery rünnak?
+
+Küpsiseid kasutatakse sageli seansi teabe salvestamiseks, mis võib sisaldada kasutaja identiteeti. Kui ründaja leiab viisi, kuidas kasutaja küpsiseid lugeda, võib tal olla võimalik esineda kasutajana ja sooritada saidiülese päringu võltsimise rünnak.
+
+     
+
+  4. Mis on pahasti alloleva koodiga? (2p) Kuidas see avalduda võiks? (2p)
+
+     $sql = 'DELETE FROM contacts WHERE id = ' . $_POST['id'];
+
+Laulis WHERE väärtuse ümber puuduvad jutumärgid. See võib põhjustada SQL-i süntaksitõrke või kui $_POST['ids'] väärtust ei kasutata õigesti, võib see põhjustada SQL-i süstimise rünnaku.
+
+  1. Mis eesmärki täidab Front Controller muster?
+
+Eesmise kontrolleri mustri eesmärk on pakkuda tsentraliseeritud sisestuspunkti kõikidele rakenduse päringutele. Seda mustrit kasutatakse kõigi päringute jaoks sooritatavate toimingute ühise komplekti määratlemiseks.
+
+
+Kui kahel kasutajal on brauseris küpsised (cookie) keelatud, siis kuidas
+     on võimalik nende kasutajate päringuid teineteisest eristada?
+
+Kahe kasutaja, kelle brauseris on küpsised keelatud, päringuid saab eristada mitmel viisil. Üks võimalus on kasutada brauseri laiendust või pistikprogrammi, mis suudab küpsiseid seada ja lugeda. Teine võimalus on seada igale kasutajale kordumatu identifikaatoriga küpsis ja seejärel kasutaja tuvastamiseks küpsist lugeda.
